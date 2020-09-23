@@ -40,9 +40,7 @@ class Home extends BaseController
 	{
 		$category = $_POST['category'];
 		$this->view->category = $this->model->showByCategory($category);
-		$this->view->render('home');
-		
-
+		// $this->view->render('home');
 	}
 	public function changeProduct($id)
 	{
